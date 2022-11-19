@@ -4,6 +4,7 @@ import qrcd from 'qrcode';
 import { configConnectionJadibot, store } from '../../config-connection.js';
 import msgUp from '../msg-upsert.js';
 import { convertBase64 } from '../../util/convert-media.js';
+if (!m.isPrivate) return conn.sendteks(m.chat, q.private, m);
 
 let jadibott = 0
 const bebek = async (m, u, a, q, g, p) => {
